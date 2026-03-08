@@ -57,7 +57,9 @@
 - AI 전투 로직을 Combat / Weapon / Damage / Sound 시스템으로 분리하여 유지보수성과 확장성 확보
 - 싱글 프로젝트이지만 멀티플레이 전환을 고려한 RPC / Replication 구조 설계
 
-🔫 SYMBIO (팀 프로젝트 / 4인)
+----------
+
+###  🔫 SYMBIO (팀 프로젝트 / 4인)
 > Unreal Engine 기반 1인칭 FPS 전투 게임
 
 🔗 GitHub: https://github.com/GyungSikHan/1st-Team14-CH3-Project</br>
