@@ -28,6 +28,35 @@
 ---
 
 ## 🎮 Team Projects
+
+### 🔥 EMBER: The Eternal Blizzard (팀 프로젝트 / 6인)
+> Unreal Engine 기반 Survival Action 게임
+
+🔗 GitHub: https://github.com/GyungSikHan/1st-Team4-Final-Project</br>
+🔗 Demo Video: [https://youtu.be/q2ws313NTcg](https://youtu.be/1DuNwBaC0Xg?si=WEej5vCPnHy81gVT)<br>
+🔗 Portfolio: [https://drive.google.com/file/d/1zo_iDcPDlLVG9eGryJzAW-Y4Bwr19yAZ/view](https://drive.google.com/file/d/1PpsPOJKj8707m6JqEeOPmhDDgPz4zifB/view?usp=sharing)
+
+- **엔진**: Unreal Engine 5.5
+- **기술**: C++, Blueprint, Git
+
+**핵심 구현**
+- AI 전투 시스템 설계 및 구현
+  - Combat / Weapon / Damage / Sound 로직을 분리한 구조로 AI 전투 시스템 구현
+- Behavior Tree 기반 AI 공격 로직 구현
+  - BT Task에서 공격 몽타주 실행 후 InProgress 상태 유지 → 몽타주 종료 시 FinishLatentTask 처리하여 공격 후 AI 상태 정지 문제 해결
+- 데이터 기반 Damage 시스템 구현
+  - FDamageData 구조체로 데미지·이펙트·사운드를 묶어 데이터 기반 밸런싱 가능하도록 설계
+- AI Weapon 충돌 판정 시스템 구현
+  - 공격 시점에만 충돌체 활성화하도록 설계하여 정확한 타격 판정 처리
+- ArmorComponent 기반 플레이어 장비 시스템 구현
+  - 방어구 장착 데이터를 Replication으로 동기화하여 네트워크 환경에서도 동일한 장착 상태 유지 가능하도록 설계
+- Main UI 에셋 프로젝트 흐름 연동
+  - 메인 메뉴 → 게임 시작 흐름을 연결하고 GameMode / GameInstance 구조에 맞게 UI 진입 구조 구성
+
+**포인트**
+- AI 전투 로직을 Combat / Weapon / Damage / Sound 시스템으로 분리하여 유지보수성과 확장성 확보
+- 싱글 프로젝트이지만 멀티플레이 전환을 고려한 RPC / Replication 구조 설계
+
 🔫 SYMBIO (팀 프로젝트 / 4인)
 > Unreal Engine 기반 1인칭 FPS 전투 게임
 
